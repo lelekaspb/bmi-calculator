@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Catamaran", sans-serif;
+  font-size: 18px;
+  background-color: #fcf7f5;
+  color: #2e2e2d;
+}
+
+form {
+  max-width: 350px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+input {
+  border: 1px solid #a8a8a8;
+  border-radius: 0.2rem;
+  padding: 5px;
+}
+
+input:not(.result_field input) {
+  display: block;
+  height: 15px;
+  width: 98%;
+}
+
+.field.error input {
+  border: 1px solid #d93c2e;
+}
+
+.error .help {
+  color: #d93c2e;
+  font-size: 0.9rem;
+}
+
+/* ---- result field ----
+-----------------------*/
+.result_field {
+  /* display: none; */
+  margin-bottom: 100px;
+}
+
+.result_field > label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result_field > label:first-child {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.result_field input {
+  margin-left: 10px;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 0.1rem;
+  text-align: right;
+  font-size: 1.4rem;
+}
+
+/* ---- submit field ----
+-----------------------*/
+
+.submit_field button {
+  display: block;
+  background-color: #325994;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+span.submit_text {
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+}

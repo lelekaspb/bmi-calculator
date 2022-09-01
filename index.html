@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI calculator</title>
+  </head>
+  <body>
+    <form autocomplete="off">
+      <div class="field result_field">
+        <label
+          >Your BMI
+          <input type="text" name="user_bmi" id="user_bmi" readonly value="?" />
+        </label>
+        <div class="explanation"></div>
+      </div>
+
+      <h2>Calculate your Body Mass Index</h2>
+      <div class="field name_field" id="name">
+        <label for="user_name">Your name </label>
+        <input type="text" name="user_name" id="user_name" />
+        <span class="help"></span>
+      </div>
+
+      <div class="field height_field">
+        <label for="user_height">Your height, cm</label>
+        <input type="text" name="user_height" id="user_height" />
+        <span class="help"></span>
+      </div>
+
+      <div class="field weight_field">
+        <label for="user_weight">Your weight, kg</label>
+        <input type="text" name="user_weight" id="user_weight" />
+        <span class="help"></span>
+      </div>
+
+      <div class="field submit_field">
+        <button type="submit">
+          <span class="submit_text">calculate</span>
+        </button>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
