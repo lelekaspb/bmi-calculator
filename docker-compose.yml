@@ -6,14 +6,17 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - .:/codebase
+      - .:/usr/share/nginx/html/
     # environment:
     # depends_on:
     # links:
     # network:
 #
-# docker compose up
+# $ docker compose up
 # the app will be running at http://localhost:8080/
+#
+# $ docker compose up --build
+# for rebuild on change, will also be running at http://localhost:8080/
 #
 # docker compose images: This command will list the images you’ve built using the current docker-compose file.
 #
